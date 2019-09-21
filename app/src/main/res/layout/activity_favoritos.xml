@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -159,7 +159,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/download"
         tools:layout_editor_absoluteY="430dp"
-        tools:srcCompat="@drawable/Imagem_3" />
+        tools:srcCompat="@drawable/imagem_3" />
 
     <TextView
         android:id="@+id/textView3"
@@ -219,7 +219,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/download"
         tools:layout_editor_absoluteY="723dp"
-        tools:srcCompat="@drawable/Imagem_3" />
+        tools:srcCompat="@drawable/imagem_3" />
 
     <ImageView
         android:id="@+id/imageView17"
@@ -231,7 +231,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10"
         app:srcCompat="@drawable/download"
-        tools:srcCompat="@drawable/Imagem_3" />
+        tools:srcCompat="@drawable/imagem_3" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -266,4 +266,4 @@
         tools:layout_editor_absoluteY="766dp" />
 
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.ConstraintLayout>

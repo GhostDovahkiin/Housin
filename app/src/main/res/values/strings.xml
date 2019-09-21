@@ -24,8 +24,8 @@
         Você não pode ter sido condenado por crime sexual.
         Você não pode se passar por outras pessoas ou fornecer informações imprecisas.
     </string>
-    <!--
-        <string name="title_activity_favoritos">FavoritosActivity</string>
+
+    <string name="title_activity_favoritos">FavoritosActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -116,8 +116,8 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
-    <string name="buttonFavoritos">Button</string>
+    <string name="button_Favoritos">Button</string>
     <string name="botão">Butão</string>
     <string name="title_activity_meus_anuncios">MeusAnunciosActivity</string>
-    -->
+
 </resources>

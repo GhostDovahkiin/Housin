@@ -15,16 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnFavoritos = findViewById(R.id.buttonFavoritos);
-        btnFavoritos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, FavoritosActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
         Button btnInscrevase = findViewById(R.id.buttonInscrever);
         btnInscrevase.setOnClickListener(new View.OnClickListener() {
             @Override
