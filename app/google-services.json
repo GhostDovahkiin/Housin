@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "88671951104",
+    "firebase_url": "https://housinapp.firebaseio.com",
+    "project_id": "housinapp",
+    "storage_bucket": "housinapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88671951104:android:1e698be5f001a413787be5",
+        "android_client_info": {
+          "package_name": "com.example.housin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88671951104-ncu4hhnh0uh0adukuq1aiots3omf7cn2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.housin",
+            "certificate_hash": "f4cd3520ad9e7b4ecccc7212f85e8bbe6d27fc1c"
+          }
+        },
+        {
+          "client_id": "88671951104-tdojdm4os5aac9tcgf0afhrkb3j4tsgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuT_StZkUBZMdxOTpGLU3rci-o3igIR2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88671951104-tdojdm4os5aac9tcgf0afhrkb3j4tsgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
