@@ -72,7 +72,7 @@
             android:textColorHint="#000" />
 
         <EditText
-            android:id="@+id/textlogin"
+            android:id="@+id/textloginC"
             android:layout_width="250dp"
             android:layout_height="45dp"
             android:layout_marginLeft="60dp"
@@ -86,7 +86,7 @@
             android:textColorHint="#000" />
 
         <EditText
-            android:id="@+id/textsenha"
+            android:id="@+id/textsenhaC"
             android:layout_width="250dp"
             android:layout_height="45dp"
             android:layout_marginLeft="60dp"
