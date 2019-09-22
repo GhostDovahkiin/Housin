@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragments.FilmesFragment">
+    tools:context=".view.fragments.LivrosFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,120 +11,100 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imageView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:srcCompat="@drawable/camera" />
+            android:src="@drawable/book" />
 
         <Switch
-            android:id="@+id/switch_terror"
+            android:id="@+id/switch_livro_terror"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
-            android:drawableStart="@drawable/ghost"
+            android:drawableStart="@drawable/dracula"
             android:drawablePadding="5dp"
             android:text="@string/terror" />
 
         <Switch
-            android:id="@+id/switch_comedia"
+            android:id="@+id/switch_livro_hq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:drawableStart="@drawable/laughing"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/hq"
             android:drawablePadding="5dp"
-            android:text="@string/comedia" />
+            android:text="@string/quadrinhos" />
 
         <Switch
-            android:id="@+id/switch_comedia_romantica"
+            android:id="@+id/switch_livro_manga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:drawableStart="@drawable/heart"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/manga"
             android:drawablePadding="5dp"
-            android:text="@string/comedia_romantica" />
+            android:text="@string/manga" />
 
         <Switch
-            android:id="@+id/switch_romantico"
+            android:id="@+id/switch_livro_romance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:drawableStart="@drawable/chat"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/romanticbook"
             android:drawablePadding="5dp"
-            android:text="@string/romantico" />
+            android:text="@string/romance" />
 
         <Switch
-            android:id="@+id/switch_ficcao"
+            android:id="@+id/switch_livro_ficcao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:drawableStart="@drawable/ufo"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/bookufo"
             android:drawablePadding="5dp"
             android:text="@string/ficcao_cientifica" />
 
         <Switch
-            android:id="@+id/switch_anime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:drawableStart="@drawable/dragonball"
-            android:drawablePadding="5dp"
-            android:text="@string/anime" />
-
-        <Switch
-            android:id="@+id/switch_drama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:drawableStart="@drawable/theatermasks"
-            android:drawablePadding="5dp"
-            android:text="@string/drama" />
-
-        <Switch
-            android:id="@+id/switch_police"
+            android:id="@+id/switch_livro_biblia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
-            android:drawableStart="@drawable/security"
+            android:drawableStart="@drawable/bible"
             android:drawablePadding="5dp"
-            android:text="@string/policiais" />
+            android:text="@string/religioso" />
 
         <Switch
-            android:id="@+id/switch_suspense"
+            android:id="@+id/switch_livro_juvenil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
-            android:drawableStart="@drawable/dots"
+            android:drawableStart="@drawable/infantojuvenil"
             android:drawablePadding="5dp"
-            android:text="Suspense" />
+            android:text="@string/infanto_juvenil" />
 
         <Switch
-            android:id="@+id/switch_besteirol"
+            android:id="@+id/switch_livro_fantasia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
-            android:drawableStart="@drawable/joker"
+            android:drawableStart="@drawable/fantasybook"
             android:drawablePadding="5dp"
-            android:text="Besteirol Americano" />
+            android:text="@string/fantasia" />
 
         <Switch
-            android:id="@+id/switch_acao"
+            android:id="@+id/switch_livro_academico"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
-            android:drawableStart="@drawable/manrunning"
+            android:drawableStart="@drawable/academico"
             android:drawablePadding="5dp"
-            android:text="Ação" />
+            android:text="@string/academico" />
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -133,6 +113,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:background="@drawable/orange_button_background"
+            android:foregroundGravity="center"
             android:scaleType="center"
             android:src="@drawable/arrow" />
     </LinearLayout>

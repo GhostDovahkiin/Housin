@@ -141,5 +141,28 @@
     <string name="introvertido">Introvertido</string>
     <string name="extrovertido">Extrovertido</string>
     <string name="responsavel">Responsável?</string>
+    <string name="fuma">Fuma?</string>
+    <string name="pop">Pop</string>
+    <string name="rock">Rock</string>
+    <string name="brega_recife">Brega Recife</string>
+    <string name="funk">Funk</string>
+    <string name="pagode">Pagode</string>
+    <string name="indie">Indie</string>
+    <string name="eletronica">Eletrônica</string>
+    <string name="hiphop">Hip Hop</string>
+    <string name="rap">Rap</string>
+    <string name="metal">Metal</string>
+    <string name="jazz">Jazz</string>
+    <string name="folk">Folk</string>
+    <string name="rb"><![CDATA[R&B]]></string>
+    <string name="forro">Forró</string>
+    <string name="classica">Clássica</string>
+    <string name="quadrinhos">Quadrinhos</string>
+    <string name="manga">Mangá</string>
+    <string name="romance">Romance</string>
+    <string name="religioso">Religioso</string>
+    <string name="infanto_juvenil">Infanto Juvenil</string>
+    <string name="fantasia">Fantasia</string>
+    <string name="academico">Acadêmico</string>
 
 </resources>

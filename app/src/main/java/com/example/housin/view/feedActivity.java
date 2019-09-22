@@ -1,6 +1,9 @@
 package com.example.housin.view;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -27,6 +30,15 @@ public class feedActivity extends AppCompatActivity {
         RecyclerView feedRecycler = findViewById(R.id.ricycleFeed);
         feedRecycler.setAdapter(new FeedAdapter(mockandoCasas(), this));
         feedRecycler.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
+
+        ImageButton perfil = findViewById(R.id.buttonPerfil);
+        perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(feedActivity.this, ContainerActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

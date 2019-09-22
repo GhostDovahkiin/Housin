@@ -1,4 +1,4 @@
-package com.example.housin.view;
+package com.example.housin.view.fragments;
 
 
 import android.os.Bundle;
@@ -13,10 +13,10 @@ import com.example.housin.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CaracteristicasFragment extends Fragment {
+public class MusicasFragment extends Fragment {
 
 
-    public CaracteristicasFragment() {
+    public MusicasFragment() {
         // Required empty public constructor
     }
 
@@ -25,7 +25,7 @@ public class CaracteristicasFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_caracteristicas, container, false);
+        return inflater.inflate(R.layout.fragment_musicas, container, false);
     }
 
 }
