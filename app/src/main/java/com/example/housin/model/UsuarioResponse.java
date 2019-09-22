@@ -7,13 +7,13 @@ public class UsuarioResponse {
 
     @SerializedName("usuario")
     @Expose
-    private Usuario usuario;
+    private UsuarioAPI usuario;
 
-    public Usuario getUsuario() {
+    public UsuarioAPI getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(Usuario usuario) {
+    public void setUsuario(UsuarioAPI usuario) {
         this.usuario = usuario;
     }
 

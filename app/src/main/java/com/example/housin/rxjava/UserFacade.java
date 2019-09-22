@@ -5,7 +5,6 @@ import android.util.Log;
 import com.example.housin.dagger.DaggerUserServiceComponent;
 import com.example.housin.dagger.UserServiceComponent;
 import com.example.housin.model.ResponseGeral;
-import com.example.housin.model.UserAPI;
 import com.example.housin.service.UserService;
 
 import javax.inject.Inject;
@@ -49,10 +48,6 @@ public class UserFacade {
 
     }
 
-    private void setting(UserAPI.Usuario usuario) {
-
-    }
-
     private String convertendoParaJson(String sexo, boolean limpo, boolean organizado, String comportamento, boolean responsavel, boolean gostaDeAnimais, boolean fuma, boolean bebe) {
         return String.format("{ \"sexo\": \"%s\", \"limpo\": %b, \"organizado\": %b, \"comportamento\": \"%s\", \"responsavel\": %b, \"gostaAnimais\": %b, \"fuma\": %b, \"bebe\": %b}", sexo, limpo, organizado, comportamento, responsavel, gostaDeAnimais, fuma, bebe);
     }
@@ -63,11 +58,5 @@ public class UserFacade {
         this.status = responseGeral.getStatus() == 200;
     }
 
-    public String formatandoBooleans(boolean value) {
-        if (value) {
-            return "Yeaaaaaaaaah";
-        }
-        return "Noooooooooo";
-    }
 
 }

@@ -13,7 +13,6 @@ import com.example.housin.R;
 import com.example.housin.model.Casa;
 import com.example.housin.model.Endereco;
 import com.example.housin.model.Mobilia;
-import com.example.housin.model.UserAPI;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +43,6 @@ public class feedActivity extends AppCompatActivity {
 
     private List<Casa> mockandoCasas() {
         List<Casa> casas = new ArrayList<>();
-        UserAPI.Usuario user = new UserAPI.Usuario();
 
         Endereco endereco = new Endereco("Sertãozinho", "centro", "Rua Projetada", "9273");
         Mobilia mobilia = new Mobilia(true, true, true, true, true, true, true, true, true, true);
