@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FilmesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@drawable/camera" />
+
+        <Switch
+            android:id="@+id/switch_terror"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/ghost"
+            android:drawablePadding="5dp"
+            android:text="@string/terror" />
+
+        <Switch
+            android:id="@+id/switch_comedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/laughing"
+            android:drawablePadding="5dp"
+            android:text="@string/comedia" />
+
+        <Switch
+            android:id="@+id/switch_comedia_romantica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/heart"
+            android:drawablePadding="5dp"
+            android:text="@string/comedia_romantica" />
+
+        <Switch
+            android:id="@+id/switch_romantico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/chat"
+            android:drawablePadding="5dp"
+            android:text="@string/romantico" />
+
+        <Switch
+            android:id="@+id/switch_ficcao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ufo"
+            android:drawablePadding="5dp"
+            android:text="@string/ficcao_cientifica" />
+
+        <Switch
+            android:id="@+id/switch_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/dragonball"
+            android:drawablePadding="5dp"
+            android:text="@string/anime" />
+
+        <Switch
+            android:id="@+id/switch_drama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/theatermasks"
+            android:drawablePadding="5dp"
+            android:text="@string/drama" />
+
+        <Switch
+            android:id="@+id/switch_police"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/security"
+            android:drawablePadding="5dp"
+            android:text="@string/policiais" />
+
+        <Switch
+            android:id="@+id/switch_suspense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/dots"
+            android:drawablePadding="5dp"
+            android:text="Suspense" />
+
+        <Switch
+            android:id="@+id/switch_besteirol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/joker"
+            android:drawablePadding="5dp"
+            android:text="Besteirol Americano" />
+
+        <Switch
+            android:id="@+id/switch_acao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/manrunning"
+            android:drawablePadding="5dp"
+            android:text="Ação" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="5dp"
+            android:src="@android:drawable/ic_media_next" />
+    </LinearLayout>
+</FrameLayout>

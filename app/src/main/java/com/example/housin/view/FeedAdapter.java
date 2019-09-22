@@ -1,16 +1,15 @@
 package com.example.housin.view;
 
 import android.content.Context;
-import android.content.Intent;
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.housin.R;
 import com.example.housin.model.Casa;
@@ -49,7 +48,6 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.MyViewHolder> 
     //chamada em cada elemento
     public void onBindViewHolder(@NonNull FeedAdapter.MyViewHolder myViewHolder, int i) {
         casaAtual = this.casas.get(i);
-        Log.i("casa on bind", casaAtual.getDono().getNome());
     }
 
     @Override

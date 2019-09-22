@@ -1,25 +1,16 @@
 package com.example.housin.view;
 
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.housin.R;
-import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.auth.api.signin.GoogleSignInResult;
-import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthCredential;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.GoogleAuthProvider;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth; // Login do Firebase
@@ -41,16 +32,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mFirebaseAuth = FirebaseAuth.getInstance();
+        /*mFirebaseAuth = FirebaseAuth.getInstance();
         textLogin = this.<EditText>findViewById(R.id.textUsername);
         textSenha = this.<EditText>findViewById(R.id.textSenha);
         findViewById(R.id.buttonLogin).setOnClickListener(this);
-        /*findViewById(R.id.buttonLogout).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonLogout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 signOut();
             }
-        } */
+        }
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -59,13 +50,13 @@ public class MainActivity extends AppCompatActivity {
         mApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
-                .build();
+                .build();*/
 
 
 
     }
 
-    private void signIn(){
+    /*private void signIn(){
         Intent intent = Auth.GoogleSignInApi.getSignInIntent(mApiClient);
         startActivityForResult(intent, 1);
     }
@@ -118,5 +109,5 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
         Toast.makeText(MainActivity.this, "Falha de autenticação", Toast.LENGTH_LONG).show();
-    }
+    }*/
 }

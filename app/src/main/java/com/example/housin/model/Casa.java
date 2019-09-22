@@ -3,7 +3,6 @@ package com.example.housin.model;
 public class Casa {
     private int qtdDeMoradores;
     private Endereco endereco;
-    private Usuario dono;
     private int qtdDeQuartos;
     private int qtdDeBanheiros;
     private Mobilia mobilia;
@@ -11,10 +10,9 @@ public class Casa {
     public Casa() {
     }
 
-    public Casa(int qtdDeMoradores, Endereco endereco, Usuario dono, int qtdDeQuartos, int qtdDeBanheiros, Mobilia mobilia) {
+    public Casa(int qtdDeMoradores, Endereco endereco, int qtdDeQuartos, int qtdDeBanheiros, Mobilia mobilia) {
         this.qtdDeMoradores = qtdDeMoradores;
         this.endereco = endereco;
-        this.dono = dono;
         this.qtdDeQuartos = qtdDeQuartos;
         this.qtdDeBanheiros = qtdDeBanheiros;
         this.mobilia = mobilia;
@@ -34,14 +32,6 @@ public class Casa {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
-    }
-
-    public Usuario getDono() {
-        return dono;
-    }
-
-    public void setDono(Usuario dono) {
-        this.dono = dono;
     }
 
     public int getQtdDeQuartos() {
