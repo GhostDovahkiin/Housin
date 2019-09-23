@@ -1,12 +1,22 @@
 package com.example.housin.model;
 
 
+import java.util.List;
+
 public class Usuario {
     private String nome, email, telefone, senha, username;
-    private List<Casas> casasCadastradas;
-    private List<Casas> casasFavoritadas;
+    private List<Casa> casasCadastradas;
+    private List<Casa> casasFavoritadas;
 
     public Usuario(String nome, String email, String telefone, String senha, String username, List<Casa> casasCadastradas, List<Casa> casasFavoritadas){
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
+        this.senha = senha;
+        this.username = username;
+    }
+
+    public Usuario(String nome, String email, String telefone, String senha, String username) {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;

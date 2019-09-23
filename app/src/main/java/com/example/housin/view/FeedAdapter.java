@@ -48,6 +48,9 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.MyViewHolder> 
     //chamada em cada elemento
     public void onBindViewHolder(@NonNull FeedAdapter.MyViewHolder myViewHolder, int i) {
         casaAtual = this.casas.get(i);
+
+        myViewHolder.imageCasa.setImageResource(casaAtual.getIdImage());
+        myViewHolder.textoDesc.setText(casaAtual.getEndereco().getCidade() + ", " + casaAtual.getEndereco().getBairro() + ", " + casaAtual.getEndereco().getRua() + ", " + casaAtual.getEndereco().getNumero());
     }
 
     @Override
@@ -58,15 +61,14 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.MyViewHolder> 
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        private ImageView imageCasa;
-        private TextView textoDesc;
+        ImageView imageCasa;
+        TextView textoDesc;
 
 
         public MyViewHolder(@NonNull final View itemView) {
             super(itemView);
             this.imageCasa = itemView.findViewById(R.id.imageCasa);
             this.textoDesc = itemView.findViewById(R.id.textoDesc);
-
 
         }
     }
