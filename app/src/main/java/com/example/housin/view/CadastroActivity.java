@@ -30,6 +30,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.net.URI;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class CadastroActivity extends AppCompatActivity {
@@ -147,7 +149,7 @@ public class CadastroActivity extends AppCompatActivity {
             public void onClick(View view) {
                 openFileChooser();
             }
-        }
+        });
 
 
         //adicionando foto
@@ -180,7 +182,6 @@ public class CadastroActivity extends AppCompatActivity {
         editTextTelefone = findViewById(R.id.texttelefone);
         editTextUsername = findViewById(R.id.textloginC);
         mAuth = FirebaseAuth.getInstance();
-        editTextAdicionarFoto = findViewById(R.id.textAdicionarFoto);
 
     }
 
@@ -197,9 +198,9 @@ public class CadastroActivity extends AppCompatActivity {
  
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK
                 && data != null && data.getData() != null) {
-            mImageUri = data.getData();
+            //mImageUri = data.getData();
  
-            Picasso.with(this).load(mImageUri).into(mImageView);
+            //Picasso.with(this).load(mImageUri).into(mImageView);
         }
     }
 
