@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".PerfilActivity"></activity>
-        <activity android:name=".AdicionarMoradiaActivity" />
+        <activity android:name=".view.PerfilActivity"></activity>
+        <activity android:name=".view.AdicionarMoradiaActivity" />
         <activity android:name=".view.ContainerActivity" />
         <activity android:name=".view.DenunciaActivity" />
         <activity android:name=".view.FavoritosActivity" />

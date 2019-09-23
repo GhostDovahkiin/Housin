@@ -1,8 +1,10 @@
-package com.example.housin;
+package com.example.housin.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.housin.R;
 
 public class AdicionarMoradiaActivity extends AppCompatActivity {
 
