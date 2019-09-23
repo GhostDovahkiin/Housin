@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -167,14 +168,24 @@
             android:drawablePadding="5dp"
             android:text="@string/classica" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="65dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/orange_button_background"
-            android:scaleType="center"
-            android:src="@drawable/arrow" />
+        <Button
+            android:id="@+id/img_btn_next5"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="136dp"
+            android:layout_marginLeft="136dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="136dp"
+            android:layout_marginRight="136dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_laranja"
+            android:text="Cadastrar"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefone" />
+
     </LinearLayout>
 </FrameLayout>
