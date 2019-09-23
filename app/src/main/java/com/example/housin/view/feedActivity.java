@@ -37,13 +37,15 @@ public class feedActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(feedActivity.this, PerfilActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
-        ImageButton voltar = findViewById(R.id.voltarButton);
-        voltar.setOnClickListener(new View.OnClickListener() {
+
+        ImageButton adicionar = findViewById(R.id.buttonAdicionar);
+        adicionar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(feedActivity.this, PerfilActivity.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(feedActivity.this, AdicionarMoradiaActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -54,6 +56,15 @@ public class feedActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(feedActivity.this, DenunciaActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        ImageButton favoritos = findViewById(R.id.buttonfavoritos);
+        favoritos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(feedActivity.this, FavoritosActivity.class);
                 startActivity(intent);
                 finish();
             }

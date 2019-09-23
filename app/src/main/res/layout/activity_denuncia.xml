@@ -64,11 +64,11 @@
         android:textColor="#FFFFFF"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/img_btn_next2"
+        app:layout_constraintStart_toEndOf="@+id/voltarButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/img_btn_next2"
+        android:id="@+id/voltarButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -153,7 +153,7 @@
         app:layout_constraintGuide_begin="603dp" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/denuncia1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="53dp"
@@ -163,33 +163,33 @@
         app:layout_constraintTop_toBottomOf="@+id/pergunta" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/denuncia2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:text="Anúncio Mentiroso"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/denuncia1" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/denuncia3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="Foto irregular"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/denuncia2" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/denuncia4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
         android:text="Spam"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/denuncia3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

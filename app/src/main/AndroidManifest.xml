@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".view.FeedbackEnviadoActivity"></activity>
+        <activity android:name=".view.DenunciaEnviadaActivity"></activity>
+        <activity android:name=".view.FeedbackEnviadoActivity" />
         <activity android:name=".view.ajudaEnviadaActivity" />
         <activity android:name=".view.DetalhesCasaActivity" />
         <activity android:name=".view.ObterAjudaActivity" />
