@@ -16,6 +16,7 @@
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:scaleType="center"
             android:src="@drawable/avatar" />
 
@@ -147,8 +148,8 @@
 
                 <TextView
                     android:id="@+id/textView18"
-                    android:layout_width="116dp"
-                    android:layout_height="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
                     android:drawableStart="@drawable/feedback"
@@ -214,7 +215,7 @@
 
                 <TextView
                     android:id="@+id/textView20"
-                    android:layout_width="69dp"
+                    android:layout_width="78dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"

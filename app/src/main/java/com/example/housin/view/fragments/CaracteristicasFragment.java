@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -116,11 +115,19 @@ public class CaracteristicasFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        userFacade = new UserFacade(new CaracteristicasFragment(), getContext());
+        userFacade = new UserFacade(new FilmesFragment(txt_username.getText().toString()), getContext(), comunicador);
+
+
 
         imgNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (txt_username.getText().toString().isEmpty()) {
+                    txt_username.setError("Username é obrigatório!");
+                    txt_username.requestFocus();
+                }
+
                 String valueSexo = retornandoValorString(sexo);
                 String valueComportamento = retornandoValorString(comportamento);
 
@@ -156,5 +163,6 @@ public class CaracteristicasFragment extends Fragment {
 
         return view;
     }
+
 
 }

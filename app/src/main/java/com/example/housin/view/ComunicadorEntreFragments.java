@@ -4,5 +4,7 @@ import androidx.fragment.app.Fragment;
 
 public interface ComunicadorEntreFragments {
 
-    public void passandoFragments(Fragment fragment);
+    void passandoFragments(Fragment fragment);
+
+    void voltandoParaActivity();
 }

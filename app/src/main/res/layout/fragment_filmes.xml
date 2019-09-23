@@ -15,6 +15,7 @@
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:scaleType="center"
             tools:srcCompat="@drawable/camera" />
 
@@ -133,10 +134,8 @@
             android:layout_width="match_parent"
             android:layout_height="39dp"
             android:layout_marginStart="136dp"
-            android:layout_marginLeft="136dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="136dp"
-            android:layout_marginRight="136dp"
             android:background="@drawable/button_laranja"
             android:text="Próximo"
             android:textColor="@android:color/white"

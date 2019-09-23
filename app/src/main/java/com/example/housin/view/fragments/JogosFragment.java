@@ -8,11 +8,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Switch;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.housin.R;
+import com.example.housin.rxjava.GameFacade;
 import com.example.housin.view.ComunicadorEntreFragments;
 
 /**
@@ -30,6 +33,7 @@ public class JogosFragment extends Fragment {
     Switch terror;
     Switch corrida;
     Switch esportes;
+    Button next;
 
 
     public JogosFragment() {
@@ -47,6 +51,15 @@ public class JogosFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_jogos, container, false);
 
+        rpg = view.findViewById(R.id.switch_rpg);
+        moba = view.findViewById(R.id.switch_moba);
+        mmorpg = view.findViewById(R.id.switch_mmorpg);
+        fps = view.findViewById(R.id.switch_fps);
+        antigos = view.findViewById(R.id.switch_classicos);
+        terror = view.findViewById(R.id.switch_jogo_terror);
+        corrida = view.findViewById(R.id.switch_corrida);
+        esportes = view.findViewById(R.id.switch_esportes);
+        next = view.findViewById(R.id.img_btn_next3);
 
         return view;
     }
@@ -68,4 +81,25 @@ public class JogosFragment extends Fragment {
         }
     }
 
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        GameFacade gameFacade = new GameFacade(getContext(), comunicadorEntreFragments);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gameFacade.postGostoGamer(username,
+                        rpg.isChecked(),
+                        moba.isChecked(),
+                        mmorpg.isChecked(),
+                        fps.isChecked(),
+                        antigos.isChecked(),
+                        terror.isChecked(),
+                        corrida.isChecked(),
+                        esportes.isChecked());
+            }
+        });
+    }
 }

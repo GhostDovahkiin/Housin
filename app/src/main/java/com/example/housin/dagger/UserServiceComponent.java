@@ -1,6 +1,7 @@
 package com.example.housin.dagger;
 
 import com.example.housin.rxjava.BookFacade;
+import com.example.housin.rxjava.GameFacade;
 import com.example.housin.rxjava.MovieFacade;
 import com.example.housin.rxjava.MusicalFacade;
 import com.example.housin.rxjava.UserFacade;
@@ -16,4 +17,6 @@ public interface UserServiceComponent {
     void inject(MovieFacade movieFacade);
     void inject(MusicalFacade musicalFacade);
     void inject(BookFacade bookFacade);
+
+    void inject(GameFacade gameFacade);
 }

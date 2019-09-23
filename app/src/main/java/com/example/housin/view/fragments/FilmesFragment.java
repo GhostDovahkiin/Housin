@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.Switch;
 
 import androidx.annotation.Nullable;
@@ -16,7 +16,6 @@ import androidx.fragment.app.Fragment;
 
 import com.example.housin.R;
 import com.example.housin.rxjava.MovieFacade;
-import com.example.housin.rxjava.UserFacade;
 import com.example.housin.view.ComunicadorEntreFragments;
 
 /**
@@ -36,7 +35,7 @@ public class FilmesFragment extends Fragment {
     Switch suspense;
     Switch besteirol;
     Switch acao;
-    ImageButton next;
+    Button next;
     String username;
 
 
@@ -92,7 +91,7 @@ public class FilmesFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        MovieFacade movieFacade = new MovieFacade(new MusicasFragment(), getContext());
+        MovieFacade movieFacade = new MovieFacade(new MusicasFragment(username), getContext(), comunicador);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,8 +112,6 @@ public class FilmesFragment extends Fragment {
                         besteirol.isChecked(),
                         acao.isChecked()
                 );
-
-
 
             }
         });

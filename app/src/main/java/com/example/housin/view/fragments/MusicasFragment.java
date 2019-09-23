@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.Switch;
 
 import androidx.annotation.Nullable;
@@ -41,7 +41,7 @@ public class MusicasFragment extends Fragment {
     Switch forro;
     Switch classica;
 
-    ImageButton next;
+    Button next;
 
 
     public MusicasFragment() {
@@ -92,7 +92,7 @@ public class MusicasFragment extends Fragment {
         forro = view.findViewById(R.id.switch_forro);
         classica = view.findViewById(R.id.switch_classica);
 
-        next = view.findViewById(R.id.img_btn_next2);
+        next = view.findViewById(R.id.img_btn_next5);
 
         return view;
     }
@@ -101,7 +101,7 @@ public class MusicasFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        MusicalFacade facade = new MusicalFacade(new LivrosFragment(), getContext());
+        MusicalFacade facade = new MusicalFacade(new LivrosFragment(username), getContext(), comunicadorEntreFragments);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
