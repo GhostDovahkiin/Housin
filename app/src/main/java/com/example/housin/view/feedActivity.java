@@ -39,6 +39,25 @@ public class feedActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ImageButton voltar = findViewById(R.id.voltarButton);
+        voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(feedActivity.this, PerfilActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        ImageButton denunciar = findViewById(R.id.buttonDenunciar);
+        denunciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(feedActivity.this, DenunciaActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 
