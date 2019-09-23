@@ -43,16 +43,6 @@
             tools:ignore="MissingConstraints"
             tools:visibility="visible" />
 
-        <ImageButton
-            android:id="@+id/voltarButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:background="#FF4300"
-            android:src="@drawable/voltar"
-            app:layout_constraintBottom_toBottomOf="@+id/textView9"
-            app:layout_constraintStart_toStartOf="@+id/textView9" />
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline30"
             android:layout_width="wrap_content"
@@ -163,19 +153,28 @@
             android:id="@+id/perfilButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginEnd="119dp"
+            android:layout_marginRight="119dp"
+            android:layout_marginBottom="19dp"
             android:background="#00FFFFFF"
-            app:srcCompat="@drawable/grupo_109"
-            tools:layout_editor_absoluteX="222dp"
-            tools:layout_editor_absoluteY="642dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/homeButton"
+            app:srcCompat="@drawable/grupo_109" />
 
         <ImageButton
             android:id="@+id/homeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="119dp"
+            android:layout_marginLeft="119dp"
+            android:layout_marginBottom="19dp"
             android:background="#00FFFFFF"
-            app:srcCompat="@drawable/grupo_111"
-            tools:layout_editor_absoluteX="119dp"
-            tools:layout_editor_absoluteY="642dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/grupo_111" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
