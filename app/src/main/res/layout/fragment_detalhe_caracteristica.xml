@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.DetalheCaracteristicaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexo: Feminino" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpo: sim" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Organizado: sim" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comportamento: Introvertido" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Responsável: Sim" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceita animais: sim" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bebe: sim" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fuma: sim" />
+    </LinearLayout>
+</FrameLayout>
