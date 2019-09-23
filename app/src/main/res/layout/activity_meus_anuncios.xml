@@ -8,11 +8,10 @@
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView2"
-        android:layout_width="fill_parent"
-        android:layout_height="584dp"
+        android:layout_width="413dp"
+        android:layout_height="660dp"
         android:fillViewport="true"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/imageView37"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7">
@@ -22,6 +21,8 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:visibility="visible">
+
+            /
 
             <ImageView
                 android:id="@+id/imageView27"
@@ -60,10 +61,10 @@
                 android:layout_marginTop="18dp"
                 android:layout_marginBottom="4dp"
                 android:gravity="center"
-                android:text="Rua do Padre Anchieta\n Nº120"
+                android:text="Rua Padre Anchieta\n Nº120"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/imageView30"
-                app:layout_constraintStart_toEndOf="@+id/imageView26"
+                app:layout_constraintStart_toEndOf="@+id/infoButton2"
                 app:layout_constraintTop_toBottomOf="@+id/imageView20"
                 app:layout_constraintVertical_bias="0.0" />
 
@@ -76,34 +77,12 @@
                 android:layout_marginTop="18dp"
                 android:layout_marginBottom="4dp"
                 android:gravity="center"
-                android:text="Rua do Padre Anchieta\n Nº120"
+                android:text="Rua Padre Anchieta\n Nº120"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/imageView31"
-                app:layout_constraintStart_toEndOf="@+id/imageView32"
+                app:layout_constraintStart_toEndOf="@+id/infoButton3"
                 app:layout_constraintTop_toBottomOf="@+id/imageView30"
                 app:layout_constraintVertical_bias="0.517" />
-
-            <ImageView
-                android:id="@+id/imageView26"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginBottom="22dp"
-                app:layout_constraintBottom_toTopOf="@+id/imageView30"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/info" />
-
-            <ImageView
-                android:id="@+id/imageView32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginBottom="22dp"
-                app:layout_constraintBottom_toTopOf="@+id/imageView31"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/info" />
 
             <ImageView
                 android:id="@+id/imageView19"
@@ -123,19 +102,6 @@
                 app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@drawable/trash" />
 
-            <ImageView
-                android:id="@+id/imageView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginBottom="22dp"
-                app:layout_constraintBottom_toTopOf="@+id/imageView20"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/info" />
-
             <TextView
                 android:id="@+id/textView24"
                 android:layout_width="wrap_content"
@@ -145,10 +111,10 @@
                 android:layout_marginTop="18dp"
                 android:layout_marginBottom="4dp"
                 android:gravity="center"
-                android:text="Rua do Tambor furado\n Nº120"
+                android:text="Rua Padre Anchieta\n Nº120"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/imageView20"
-                app:layout_constraintStart_toEndOf="@+id/imageView16"
+                app:layout_constraintStart_toEndOf="@+id/infoButton1"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
@@ -175,7 +141,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView30"
-                app:srcCompat="@drawable/casa2" />
+                app:srcCompat="@drawable/imagem_3" />
 
             <ImageView
                 android:id="@+id/imageView31"
@@ -202,6 +168,42 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_begin="388dp" />
+
+            <ImageButton
+                android:id="@+id/infoButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="22dp"
+                android:background="#0000000E"
+                app:layout_constraintBottom_toTopOf="@+id/imageView20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/info" />
+
+            <ImageButton
+                android:id="@+id/infoButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="22dp"
+                android:background="#0000000E"
+                app:layout_constraintBottom_toTopOf="@+id/imageView30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/info" />
+
+            <ImageButton
+                android:id="@+id/infoButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="22dp"
+                android:background="#0000000E"
+                app:layout_constraintBottom_toTopOf="@+id/imageView31"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/info" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
@@ -253,65 +255,5 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/voltar" />
-
-    <ImageView
-        android:id="@+id/imageView37"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="center"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/menu"
-        tools:visibility="visible" />
-
-    <Button
-        android:id="@+id/favoritos_button"
-        android:layout_width="65dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
-        android:text="Button"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView37"
-        app:layout_constraintHorizontal_bias="0.656"
-        app:layout_constraintStart_toStartOf="@+id/imageView37" />
-
-    <Button
-        android:id="@+id/conta_button"
-        android:layout_width="65dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
-        android:text="Button"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.369"
-        app:layout_constraintStart_toStartOf="@+id/imageView37" />
-
-    <Button
-        android:id="@+id/adicioar_anuncio_button"
-        android:layout_width="65dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
-        android:text="Button"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView37"
-        app:layout_constraintHorizontal_bias="0.953"
-        app:layout_constraintStart_toStartOf="@+id/imageView37" />
-
-    <Button
-        android:id="@+id/home_button"
-        android:layout_width="65dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:text="Button"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="@+id/imageView37" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

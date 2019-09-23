@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -52,7 +53,7 @@ public class PerfilActivity extends AppCompatActivity {
 
         //Entrando nos termos e compomissos
 
-        Button termos = findViewById(R.id.buttonObterAjudaPerfil);
+        Button termos = findViewById(R.id.buttonTermosPerfil);
         termos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,6 +91,16 @@ public class PerfilActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(PerfilActivity.this, FeedbackActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        ImageButton back = findViewById(R.id.voltarButton);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PerfilActivity.this, feedActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 

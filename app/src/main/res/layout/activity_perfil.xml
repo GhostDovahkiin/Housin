@@ -65,7 +65,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/background_botao_branco"
-        android:text="Termos E compromisso"
+        android:text="OBTER AJUDA"
         app:layout_constraintBottom_toTopOf="@+id/buttonTermosPerfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +77,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/background_botao_branco"
-        android:text="Obter Ajuda"
+        android:text="TERMOS E COMPROMISSO"
         app:layout_constraintBottom_toTopOf="@+id/buttonFeedBackPerfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,10 +88,8 @@
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="24dp"
         android:background="@drawable/background_botao_branco"
         android:text="FeedBack"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonTermosPerfil" />
@@ -136,71 +134,16 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
         tools:text="Nome do Usuário" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#fff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp">
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/feed"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/perfil"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline8"
-            app:layout_constraintStart_toStartOf="@+id/guideline7"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/adicionarcasa"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline9"
-            app:layout_constraintStart_toStartOf="@+id/guideline8"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/favoritos"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/guideline9"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="95dp" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="202dp" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="313dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/voltarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/voltar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

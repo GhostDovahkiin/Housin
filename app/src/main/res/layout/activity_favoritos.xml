@@ -8,11 +8,10 @@
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView2"
-        android:layout_width="fill_parent"
-        android:layout_height="584dp"
+        android:layout_width="411dp"
+        android:layout_height="657dp"
         android:fillViewport="true"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/imageView37"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7">
@@ -49,15 +48,15 @@
                 android:id="@+id/textView30"
                 android:layout_width="221dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginLeft="28dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginBottom="4dp"
                 android:gravity="center"
                 android:text="Rua do Padre Anchieta, Nº120"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/imageView30"
-                app:layout_constraintStart_toEndOf="@+id/imageView26"
+                app:layout_constraintStart_toEndOf="@+id/infoButton2"
                 app:layout_constraintTop_toBottomOf="@+id/imageView20"
                 app:layout_constraintVertical_bias="0.0" />
 
@@ -65,39 +64,17 @@
                 android:id="@+id/textView34"
                 android:layout_width="221dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginLeft="28dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginBottom="4dp"
                 android:gravity="center"
                 android:text="Rua do Padre Anchieta, Nº120"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/imageView31"
-                app:layout_constraintStart_toEndOf="@+id/imageView32"
+                app:layout_constraintStart_toEndOf="@+id/infoButton3"
                 app:layout_constraintTop_toBottomOf="@+id/imageView30"
                 app:layout_constraintVertical_bias="0.517" />
-
-            <ImageView
-                android:id="@+id/imageView26"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginBottom="22dp"
-                app:layout_constraintBottom_toTopOf="@+id/imageView30"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/info" />
-
-            <ImageView
-                android:id="@+id/imageView32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginBottom="22dp"
-                app:layout_constraintBottom_toTopOf="@+id/imageView31"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/info" />
 
             <ImageView
                 android:id="@+id/imageView19"
@@ -159,32 +136,19 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageView33"
                 app:layout_constraintStart_toEndOf="@+id/textView34" />
 
-            <ImageView
-                android:id="@+id/imageView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginBottom="22dp"
-                app:layout_constraintBottom_toTopOf="@+id/imageView20"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/info" />
-
             <TextView
                 android:id="@+id/textView24"
                 android:layout_width="221dp"
                 android:layout_height="56dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginLeft="28dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginBottom="4dp"
                 android:gravity="center"
                 android:text="Rua do Tumbor, Nº120"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/imageView20"
-                app:layout_constraintStart_toEndOf="@+id/imageView16"
+                app:layout_constraintStart_toEndOf="@+id/infoButton1"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
@@ -224,6 +188,51 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView34"
                 app:srcCompat="@drawable/imagem_3" />
+
+            <ImageButton
+                android:id="@+id/infoButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="22dp"
+                android:background="#00FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/imageView20"
+                app:layout_constraintEnd_toStartOf="@+id/textView24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/info" />
+
+            <ImageButton
+                android:id="@+id/infoButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="22dp"
+                android:background="#00FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/imageView30"
+                app:layout_constraintEnd_toStartOf="@+id/textView30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/info" />
+
+            <ImageButton
+                android:id="@+id/infoButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginRight="38dp"
+                android:layout_marginBottom="22dp"
+                android:background="#00FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/imageView31"
+                app:layout_constraintEnd_toStartOf="@+id/textView34"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/info" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

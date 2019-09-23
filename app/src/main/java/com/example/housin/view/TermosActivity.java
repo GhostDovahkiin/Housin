@@ -20,7 +20,7 @@ public class TermosActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TermosActivity.this, CadastroActivity.class);
+                Intent intent = new Intent(TermosActivity.this, PerfilActivity.class);
                 startActivity(intent);
 
 

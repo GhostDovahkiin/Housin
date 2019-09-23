@@ -24,7 +24,7 @@
         tools:visibility="visible" />
 
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/voltarGostosPessoais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"

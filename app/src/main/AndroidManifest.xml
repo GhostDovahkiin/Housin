@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,10 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".view.ObterAjudaActivity"></activity>
+        <activity android:name=".view.FeedbackEnviadoActivity"></activity>
+        <activity android:name=".view.ajudaEnviadaActivity" />
+        <activity android:name=".view.DetalhesCasaActivity" />
+        <activity android:name=".view.ObterAjudaActivity" />
         <activity android:name=".view.PerfilActivity" />
         <activity android:name=".view.AdicionarMoradiaActivity" />
-        <activity android:name=".view.DadosPessoaisActivity"></activity>
+        <activity android:name=".view.DadosPessoaisActivity" />
         <activity android:name=".view.ContainerActivity" />
         <activity android:name=".view.DenunciaActivity" />
         <activity android:name=".view.FavoritosActivity" />
@@ -39,9 +44,5 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

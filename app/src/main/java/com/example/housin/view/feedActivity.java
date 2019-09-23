@@ -39,6 +39,25 @@ public class feedActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ImageButton voltar = findViewById(R.id.voltarButton);
+        voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(feedActivity.this, PerfilActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        ImageButton denunciar = findViewById(R.id.buttonDenunciar);
+        denunciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(feedActivity.this, DenunciaActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 
@@ -58,11 +77,11 @@ public class feedActivity extends AppCompatActivity {
     private List<Endereco> enderecos() {
         List<Endereco> enderecos = new ArrayList<>();
 
-        enderecos.add(new Endereco("Rio Tinto", "centro", "Rua Projetada", "9273"));
-        enderecos.add(new Endereco("Rio Tinto", "bairro novo", "Rua Professor Alameda", "1234"));
-        enderecos.add(new Endereco("Rio Tinto", "centro", "rua do sol", "0987"));
-        enderecos.add(new Endereco("Rio Tinto", "centro", "rua da aurora", "8232"));
-        enderecos.add(new Endereco("Rio Tinto", "centro", "rua do tambor", "8232"));
+        enderecos.add(new Endereco("Rio Tinto", "Conjunto", "Rua Projetada", "9273"));
+        enderecos.add(new Endereco("Rio Tinto", "Salema", "Rua Professor Alameda", "557"));
+        enderecos.add(new Endereco("Rio Tinto", "Centro", "Rua da Mangueira", "0987"));
+        enderecos.add(new Endereco("Rio Tinto", "Centro", "rua da Aurora", "8232"));
+        enderecos.add(new Endereco("Rio Tinto", "Centro", "rua do Tambor", "349"));
 
         return enderecos;
     }
