@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private FirebaseAuth mFirebaseAuth; // Login do Firebase
-    private GoogleApiClient mApiClient; // Login do Google
+    //private GoogleApiClient mApiClient; // Login do Google
     private EditText editTextUser, editTextSenha;
 
     @Override
@@ -50,6 +50,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         String user = editTextUser.getText().toString();
         String senha = editTextSenha.getText().toString();
+
+        if(user.isEmpty()){
+            editTextUser.setError("Email é requerido");
+            editTextUser.requestFocus();
+            return;
+        }
+
+        if(senha.isEmpty()){
+            editTextSenha.setError("Senha é requerida");
+            editTextSenha.requestFocus();
+            return;
+        }
 
         mFirebaseAuth.signInWithEmailAndPassword(user, senha)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
