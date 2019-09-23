@@ -144,12 +144,12 @@ public class CadastroActivity extends AppCompatActivity {
             }
         });
 
-        editTextAdicionarFoto.setOnClickListener(new View.OnClickListener() {
+        /*editTextAdicionarFoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openFileChooser();
             }
-        });
+        });*/
 
 
         //adicionando foto
