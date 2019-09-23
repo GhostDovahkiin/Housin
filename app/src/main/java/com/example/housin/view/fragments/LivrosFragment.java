@@ -14,10 +14,14 @@ import com.example.housin.R;
  * A simple {@link Fragment} subclass.
  */
 public class LivrosFragment extends Fragment {
-
+    private String username;
 
     public LivrosFragment() {
         // Required empty public constructor
+    }
+
+    public LivrosFragment(String username) {
+        this.username = username;
     }
 
 

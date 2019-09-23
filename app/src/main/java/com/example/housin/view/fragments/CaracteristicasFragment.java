@@ -116,7 +116,7 @@ public class CaracteristicasFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        userFacade = new UserFacade();
+        userFacade = new UserFacade(new CaracteristicasFragment(), getContext());
 
         imgNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,15 +131,8 @@ public class CaracteristicasFragment extends Fragment {
                 boolean valueBebidas = retornandoValorBoolean(bebidas);
                 boolean valueCigarros = retornandoValorBoolean(cigarros);
 
-                boolean status = userFacade.postUsuario(txt_username.getText().toString(), valueSexo, valueLimpo, valueOrganizado, valueComportamento, valueResponsavel, valueAnimais, valueBebidas, valueCigarros);
+                userFacade.postUsuario(txt_username.getText().toString(), valueSexo, valueLimpo, valueOrganizado, valueComportamento, valueResponsavel, valueAnimais, valueBebidas, valueCigarros);
 
-                Log.i("status lemon", String.valueOf(status));
-
-                if (status) {
-                    comunicador.passandoFragments(new FilmesFragment());
-                } else {
-                    Toast.makeText(getContext(), "Deu merda", Toast.LENGTH_LONG).show();
-                }
             }
         });
     }

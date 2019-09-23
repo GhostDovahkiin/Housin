@@ -1,11 +1,16 @@
 package com.example.housin.rxjava;
 
+import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 import com.example.housin.dagger.DaggerUserServiceComponent;
 import com.example.housin.dagger.UserServiceComponent;
 import com.example.housin.model.ResponseGeral;
 import com.example.housin.service.UserService;
+import com.example.housin.view.ComunicadorEntreFragments;
 
 import javax.inject.Inject;
 
@@ -14,16 +19,19 @@ import io.reactivex.schedulers.Schedulers;
 import okhttp3.RequestBody;
 
 public class UserFacade {
-    private static String postOK = " Usuário adicionado!";
-    private static String postErro = "Usuário já existe!";
-    boolean status;
+    private Fragment fragment;
+    private Context context;
+    private ComunicadorEntreFragments comunicadorEntreFragments;
 
     @Inject
     UserService userService;
 
-    public UserFacade() {
+    public UserFacade(Fragment fragment, Context context) {
         UserServiceComponent userServiceComponent = DaggerUserServiceComponent.builder().build();
         userServiceComponent.inject(this);
+        this.fragment = fragment;
+        this.context = context;
+
     }
 
     public void bla(String username) {
@@ -34,7 +42,7 @@ public class UserFacade {
                 .subscribe(resultApi -> setting(resultApi.getUsuario()), throwable -> throwable.printStackTrace());*/
     }
 
-    public boolean postUsuario(String username, String sexo, boolean limpo, boolean organizado, String comportamento, boolean responsavel, boolean gostaDeAnimais, boolean fuma, boolean bebe) {
+    public void postUsuario(String username, String sexo, boolean limpo, boolean organizado, String comportamento, boolean responsavel, boolean gostaDeAnimais, boolean fuma, boolean bebe) {
         Log.i("post", sexo);
         String json = convertendoParaJson(sexo, limpo, organizado, comportamento, responsavel, gostaDeAnimais, fuma, bebe);
         RequestBody body = RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), json);
@@ -44,8 +52,6 @@ public class UserFacade {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(responseGeral -> checandoStatus(responseGeral), throwable -> throwable.printStackTrace());
 
-        return status;
-
     }
 
     private String convertendoParaJson(String sexo, boolean limpo, boolean organizado, String comportamento, boolean responsavel, boolean gostaDeAnimais, boolean fuma, boolean bebe) {
@@ -53,9 +59,12 @@ public class UserFacade {
     }
 
     private void checandoStatus(ResponseGeral responseGeral) {
-        Log.i("response lala", responseGeral.getResult());
-        Log.i("status lele", String.valueOf(responseGeral.getStatus() == 200));
-        this.status = responseGeral.getStatus() == 200;
+
+        if(responseGeral.getStatus() == 200) {
+            comunicadorEntreFragments.passandoFragments(fragment);
+        } else {
+            Toast.makeText(context, responseGeral.getResult(), Toast.LENGTH_LONG).show();
+        }
     }
 
 
