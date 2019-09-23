@@ -29,12 +29,13 @@ public class feedActivity extends AppCompatActivity {
         RecyclerView feedRecycler = findViewById(R.id.ricycleFeed);
         feedRecycler.setAdapter(new FeedAdapter(mockandoCasas(), this));
         feedRecycler.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
+        
 
         ImageButton perfil = findViewById(R.id.buttonPerfil);
         perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(feedActivity.this, ContainerActivity.class);
+                Intent intent = new Intent(feedActivity.this, PerfilActivity.class);
                 startActivity(intent);
             }
         });
