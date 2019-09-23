@@ -33,20 +33,23 @@ import com.google.firebase.database.FirebaseDatabase;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class CadastroActivity extends AppCompatActivity {
-
-
+    
+    
     private CircleImageView imagem;
     private final int GALERIA_IMAGENS = 1;
     private final int PERMISSAO_REQUEST = 2;
-    private EditText editTextNome, editTextEmail, editTextTelefone, editTextUsername, editTextSenha;
+    private EditText editTextNome, editTextEmail, editTextTelefone, editTextUsername, editTextSenha, editTextAdicionarFoto;
     private FirebaseAuth mAuth;
+    private static final int PICK_IMAGE_REQUEST = 1;
+    private URI mImageUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
 
-        //Provisório --- ir para o feed
+
+        //Cadastro de usuário completo
         Button cadastrar = findViewById(R.id.buttoncadastrar);
         cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,7 +132,7 @@ public class CadastroActivity extends AppCompatActivity {
         });
 
 
-        //VOltar para tela inicial
+        //Cancelar cadastro, botão de retorno
         ImageView close = findViewById(R.id.imageClose);
         close.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,6 +141,13 @@ public class CadastroActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        editTextAdicionarFoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFileChooser();
+            }
+        }
 
 
         //adicionando foto
@@ -170,7 +180,27 @@ public class CadastroActivity extends AppCompatActivity {
         editTextTelefone = findViewById(R.id.texttelefone);
         editTextUsername = findViewById(R.id.textloginC);
         mAuth = FirebaseAuth.getInstance();
+        editTextAdicionarFoto = findViewById(R.id.textAdicionarFoto);
 
+    }
+
+    private void openFileChooser() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(intent, PICK_IMAGE_REQUEST);
+    }
+ 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+ 
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK
+                && data != null && data.getData() != null) {
+            mImageUri = data.getData();
+ 
+            Picasso.with(this).load(mImageUri).into(mImageView);
+        }
     }
 
     @Override
@@ -185,7 +215,7 @@ public class CadastroActivity extends AppCompatActivity {
     }
 
 
-    @Override
+    /*@Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == GALERIA_IMAGENS) {
@@ -200,7 +230,7 @@ public class CadastroActivity extends AppCompatActivity {
             imagem.setImageBitmap(imagemGaleria);
 
         }
-    }
+    }*/
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
