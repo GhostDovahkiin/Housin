@@ -229,7 +229,7 @@
         app:srcCompat="@drawable/image_redonda" />
 
     <Button
-        android:id="@+id/sairButton"
+        android:id="@+id/sairButton1"
         android:layout_width="139dp"
         android:layout_height="39dp"
         android:layout_marginStart="136dp"

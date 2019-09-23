@@ -29,7 +29,7 @@ public class feedActivity extends AppCompatActivity {
         RecyclerView feedRecycler = findViewById(R.id.ricycleFeed);
         feedRecycler.setAdapter(new FeedAdapter(mockandoCasas(), this));
         feedRecycler.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
-        
+
 
         ImageButton perfil = findViewById(R.id.buttonPerfil);
         perfil.setOnClickListener(new View.OnClickListener() {
@@ -44,15 +44,38 @@ public class feedActivity extends AppCompatActivity {
 
     private List<Casa> mockandoCasas() {
         List<Casa> casas = new ArrayList<>();
+        List<Integer> ids = mockcasas();
 
-        Endereco endereco = new Endereco("Sertãozinho", "centro", "Rua Projetada", "9273");
+        List<Endereco> enderecos = enderecos();
         Mobilia mobilia = new Mobilia(true, true, true, true, true, true, true, true, true, true);
         for(int i = 0; i < 5; i++) {
-            casas.add(new Casa(4, endereco, 2, 1, mobilia));
+            casas.add(new Casa(4, enderecos.get(i), 2, 1, mobilia, ids.get(i)));
         }
 
         return casas;
     }
 
+    private List<Endereco> enderecos() {
+        List<Endereco> enderecos = new ArrayList<>();
+
+        enderecos.add(new Endereco("Rio Tinto", "centro", "Rua Projetada", "9273"));
+        enderecos.add(new Endereco("Rio Tinto", "bairro novo", "Rua Professor Alameda", "1234"));
+        enderecos.add(new Endereco("Rio Tinto", "centro", "rua do sol", "0987"));
+        enderecos.add(new Endereco("Rio Tinto", "centro", "rua da aurora", "8232"));
+        enderecos.add(new Endereco("Rio Tinto", "centro", "rua do tambor", "8232"));
+
+        return enderecos;
+    }
+
+    private List<Integer> mockcasas() {
+        List<Integer> integers = new ArrayList<>();
+        integers.add(R.drawable.casadois);
+        integers.add(R.drawable.casatres);
+        integers.add(R.drawable.casaquatro);
+        integers.add(R.drawable.casacinco);
+        integers.add(R.drawable.casaum);
+
+        return integers;
+    }
 
 }

@@ -13,9 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".view.DadosPessoaisActivity"></activity>
+        <activity android:name=".view.ObterAjudaActivity"></activity>
         <activity android:name=".view.PerfilActivity" />
         <activity android:name=".view.AdicionarMoradiaActivity" />
+        <activity android:name=".view.DadosPessoaisActivity"></activity>
         <activity android:name=".view.ContainerActivity" />
         <activity android:name=".view.DenunciaActivity" />
         <activity android:name=".view.FavoritosActivity" />
@@ -23,6 +24,9 @@
         <activity android:name=".view.TermosActivity" />
         <activity android:name=".view.CadastroActivity" />
         <activity android:name=".view.LoginActivity" />
+        <activity android:name=".view.ContaActivity" />
+        <activity android:name=".view.MeusAnuncios" />
+        <activity android:name=".view.FeedbackActivity" />
         <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,5 +39,9 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

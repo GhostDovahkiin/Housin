@@ -5,17 +5,23 @@ public class Casa {
     private Endereco endereco;
     private int qtdDeQuartos;
     private int qtdDeBanheiros;
+    private int idImage;
     private Mobilia mobilia;
 
     public Casa() {
     }
 
-    public Casa(int qtdDeMoradores, Endereco endereco, int qtdDeQuartos, int qtdDeBanheiros, Mobilia mobilia) {
+    public Casa(int qtdDeMoradores, Endereco endereco, int qtdDeQuartos, int qtdDeBanheiros, Mobilia mobilia, int IdImage) {
         this.qtdDeMoradores = qtdDeMoradores;
         this.endereco = endereco;
         this.qtdDeQuartos = qtdDeQuartos;
         this.qtdDeBanheiros = qtdDeBanheiros;
         this.mobilia = mobilia;
+        this.idImage = IdImage;
+    }
+
+    public int getIdImage() {
+        return idImage;
     }
 
     public int getQtdDeMoradores() {

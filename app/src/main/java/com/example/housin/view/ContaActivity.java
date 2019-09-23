@@ -1,27 +1,34 @@
 package com.example.housin.view;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.housin.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ContaActivity extends AppCompatActivity {
 
-    FirebaseAuth mAuth = FirebaseAuth.getInstance();
-    Button buttonLogout = (Button) findViewById(R.id.sairButton);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conta);
 
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        Button buttonLogout = findViewById(R.id.sairButton1);
+
         buttonLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mAuth.getInstance().signOut();
+                Intent intent = new Intent(ContaActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
