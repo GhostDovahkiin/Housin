@@ -3,8 +3,10 @@ package com.example.housin.model;
 
 public class Usuario {
     private String nome, email, telefone, senha, username;
+    private List<Casas> casasCadastradas;
+    private List<Casas> casasFavoritadas;
 
-    public Usuario(String nome, String email, String telefone, String senha, String username){
+    public Usuario(String nome, String email, String telefone, String senha, String username, List<Casa> casasCadastradas, List<Casa> casasFavoritadas){
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;

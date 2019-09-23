@@ -153,13 +153,13 @@ public class CadastroActivity extends AppCompatActivity {
 
 
         //adicionando foto
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                    Manifest.permission.READ_EXTERNAL_STORAGE)) {
+                    Manifest.permission.READ_EXTERNAL_STORAGE)){
 
-            } else {
+            }else {
                 ActivityCompat.requestPermissions(this,
-                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                        new String[] {Manifest.permission.READ_EXTERNAL_STORAGE},
                         PERMISSAO_REQUEST);
             }
 
@@ -176,6 +176,7 @@ public class CadastroActivity extends AppCompatActivity {
             }
         });
 
+
         editTextNome = findViewById(R.id.textnome);
         editTextEmail = findViewById(R.id.textemail);
         editTextSenha = findViewById(R.id.textsenhaC);
@@ -191,18 +192,7 @@ public class CadastroActivity extends AppCompatActivity {
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent, PICK_IMAGE_REQUEST);
     }
- 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
- 
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK
-                && data != null && data.getData() != null) {
-            //mImageUri = data.getData();
- 
-            //Picasso.with(this).load(mImageUri).into(mImageView);
-        }
-    }
+
 
     @Override
     protected void onStart() {
@@ -216,7 +206,7 @@ public class CadastroActivity extends AppCompatActivity {
     }
 
 
-    /*@Override
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == GALERIA_IMAGENS) {
@@ -231,7 +221,7 @@ public class CadastroActivity extends AppCompatActivity {
             imagem.setImageBitmap(imagemGaleria);
 
         }
-    }*/
+    }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
