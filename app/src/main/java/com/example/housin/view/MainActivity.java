@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        String user = editTextUser.getText().toString();
-        String senha = editTextSenha.getText().toString();
+        String user = editTextUser.getText().toString().trim();
+        String senha = editTextSenha.getText().toString().trim();
 
         if(user.isEmpty()){
             editTextUser.setError("Email é requerido");
