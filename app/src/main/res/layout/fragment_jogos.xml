@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.JogosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gamepad" />
+
+        <Switch
+            android:id="@+id/switch_rpg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/weapons"
+            android:drawablePadding="5dp"
+            android:text="RPG" />
+
+        <Switch
+            android:id="@+id/switch_moba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/map"
+            android:drawablePadding="5dp"
+            android:text="MOBA" />
+
+        <Switch
+            android:id="@+id/switch_mmorpg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/mmorpg"
+            android:drawablePadding="5dp"
+            android:text="MMORPG" />
+
+        <Switch
+            android:id="@+id/switch_fps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/gun"
+            android:drawablePadding="5dp"
+            android:text="FPS" />
+
+        <Switch
+            android:id="@+id/switch_classicos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/mario"
+            android:drawablePadding="5dp"
+            android:text="Jogos Antigos" />
+
+        <Switch
+            android:id="@+id/switch_jogo_terror"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/zombie"
+            android:drawablePadding="5dp"
+            android:text="@string/terror" />
+
+        <Switch
+            android:id="@+id/switch_corrida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/race"
+            android:drawablePadding="5dp"
+            android:text="Corrida" />
+
+        <Switch
+            android:id="@+id/switch_esportes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/stadium"
+            android:drawablePadding="5dp"
+            android:text="Esportes" />
+
+        <Button
+            android:id="@+id/img_btn_next3"
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="136dp"
+            android:background="@drawable/button_laranja"
+            android:text="Cadastrar!"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefone" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.LivrosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/book" />
+
+        <Switch
+            android:id="@+id/switch_livro_terror"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/dracula"
+            android:drawablePadding="5dp"
+            android:text="@string/terror" />
+
+        <Switch
+            android:id="@+id/switch_livro_hq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/hq"
+            android:drawablePadding="5dp"
+            android:text="@string/quadrinhos" />
+
+        <Switch
+            android:id="@+id/switch_livro_manga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/manga"
+            android:drawablePadding="5dp"
+            android:text="@string/manga" />
+
+        <Switch
+            android:id="@+id/switch_livro_romance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/romanticbook"
+            android:drawablePadding="5dp"
+            android:text="@string/romance" />
+
+        <Switch
+            android:id="@+id/switch_livro_ficcao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/bookufo"
+            android:drawablePadding="5dp"
+            android:text="@string/ficcao_cientifica" />
+
+        <Switch
+            android:id="@+id/switch_livro_biblia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/bible"
+            android:drawablePadding="5dp"
+            android:text="@string/religioso" />
+
+        <Switch
+            android:id="@+id/switch_livro_juvenil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/infantojuvenil"
+            android:drawablePadding="5dp"
+            android:text="@string/infanto_juvenil" />
+
+        <Switch
+            android:id="@+id/switch_livro_fantasia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/fantasybook"
+            android:drawablePadding="5dp"
+            android:text="@string/fantasia" />
+
+        <Switch
+            android:id="@+id/switch_livro_academico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableStart="@drawable/academico"
+            android:drawablePadding="5dp"
+            android:text="@string/academico" />
+
+        <Button
+            android:id="@+id/img_btn_next4"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="136dp"
+            android:background="@drawable/button_laranja"
+            android:text="Próximo"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefone" />
+
+    </LinearLayout>
+</FrameLayout>

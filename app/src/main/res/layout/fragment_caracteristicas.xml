@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.CaracteristicasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:scaleType="center"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:foregroundGravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Nome de usuário"
+                android:inputType="textPersonName" />
+
+            <RadioGroup
+                android:id="@+id/group_sexo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/gender"
+                    android:drawablePadding="5dp"
+                    android:text="@string/sexo" />
+
+                <RadioButton
+                    android:id="@+id/radioF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/feminino" />
+
+                <RadioButton
+                    android:id="@+id/radioM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/masculino" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/group_limpeza"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/cleaning"
+                    android:drawablePadding="5dp"
+                    android:text="@string/limpo" />
+
+                <RadioButton
+                    android:id="@+id/radioLimpoSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/sim" />
+
+                <RadioButton
+                    android:id="@+id/radioLimpoNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/nao" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/group_organizacao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/calendar"
+                    android:drawablePadding="5dp"
+                    android:text="@string/organizado" />
+
+                <RadioButton
+                    android:id="@+id/radioOrgSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/sim" />
+
+                <RadioButton
+                    android:id="@+id/radioOrgNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/nao" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/group_comportamento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/feedback"
+                    android:drawablePadding="5dp"
+                    android:text="@string/comportamento" />
+
+                <RadioButton
+                    android:id="@+id/radioIntrovertido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/introvertido" />
+
+                <RadioButton
+                    android:id="@+id/radioExtrovertido"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/extrovertido" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/group_responsabilidade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/money"
+                    android:drawablePadding="5dp"
+                    android:text="@string/responsavel" />
+
+                <RadioButton
+                    android:id="@+id/radioRespSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/sim" />
+
+                <RadioButton
+                    android:id="@+id/radioRespNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nao" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/group_animais"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/pawprint"
+                    android:drawablePadding="5dp"
+                    android:text="Aceita animais?" />
+
+                <RadioButton
+                    android:id="@+id/radioAnimalSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/sim" />
+
+                <RadioButton
+                    android:id="@+id/radioAnimalNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nao" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/group_bebidas"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/cheers"
+                    android:drawablePadding="5dp"
+                    android:text="Bebe?" />
+
+                <RadioButton
+                    android:id="@+id/radioBebeSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/sim" />
+
+                <RadioButton
+                    android:id="@+id/radioBebeNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nao" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/group_cigarros"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/cigarrete"
+                    android:drawablePadding="5dp"
+                    android:text="@string/fuma" />
+
+                <RadioButton
+                    android:id="@+id/radioFumaSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/sim" />
+
+                <RadioButton
+                    android:id="@+id/radioFumaNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nao" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/img_btn_next1"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="136dp"
+            android:background="@drawable/button_laranja"
+            android:text="Próximo"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefone" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

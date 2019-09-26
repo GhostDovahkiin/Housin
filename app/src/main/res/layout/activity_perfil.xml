@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ativoo"
+    tools:context=".view.PerfilActivity">
+
+
+    <Button
+        android:id="@+id/buttonDadosPessoais"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_botao_branco"
+        android:text="Dados Pessoais"
+        app:layout_constraintBottom_toTopOf="@+id/buttonContaPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNomeUsuario"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonContaPerfil"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_botao_branco"
+        android:text="Conta"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFavoritosPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDadosPessoais" />
+
+    <Button
+        android:id="@+id/buttonFavoritosPerfil"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_botao_branco"
+        android:text="Meus Favoritos"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAnunciosPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContaPerfil" />
+
+    <Button
+        android:id="@+id/buttonAnunciosPerfil"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_botao_branco"
+        android:text="Meus anúncios"
+        app:layout_constraintBottom_toTopOf="@+id/buttonObterAjudaPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFavoritosPerfil" />
+
+    <Button
+        android:id="@+id/buttonObterAjudaPerfil"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_botao_branco"
+        android:text="OBTER AJUDA"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTermosPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnunciosPerfil" />
+
+    <Button
+        android:id="@+id/buttonTermosPerfil"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_botao_branco"
+        android:text="TERMOS E COMPROMISSO"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFeedBackPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonObterAjudaPerfil" />
+
+    <Button
+        android:id="@+id/buttonFeedBackPerfil"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_botao_branco"
+        android:text="FeedBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTermosPerfil" />
+
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+
+        android:background="@drawable/image_redonda"
+        app:layout_constraintBottom_toTopOf="@+id/textNomeUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="16dp"
+        android:text="Perfil"
+        android:textAlignment="center"
+        android:textColor="#FF4300"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textNomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do usuário"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDadosPessoais"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        tools:text="Nome do Usuário" />
+
+    <ImageButton
+        android:id="@+id/voltarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

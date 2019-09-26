@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.housin">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/laucher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/laucher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".view.DenunciaEnviadaActivity"></activity>
+        <activity android:name=".view.FeedbackEnviadoActivity" />
+        <activity android:name=".view.ajudaEnviadaActivity" />
+        <activity android:name=".view.DetalhesCasaActivity" />
+        <activity android:name=".view.ObterAjudaActivity" />
+        <activity android:name=".view.PerfilActivity" />
+        <activity android:name=".view.AdicionarMoradiaActivity" />
+        <activity android:name=".view.DadosPessoaisActivity" />
+        <activity android:name=".view.ContainerActivity" />
+        <activity android:name=".view.DenunciaActivity" />
+        <activity android:name=".view.FavoritosActivity" />
+        <activity android:name=".view.feedActivity" />
+        <activity android:name=".view.TermosActivity" />
+        <activity android:name=".view.CadastroActivity" />
+        <activity android:name=".view.LoginActivity" />
+        <activity android:name=".view.ContaActivity" />
+        <activity android:name=".view.MeusAnuncios" />
+        <activity android:name=".view.FeedbackActivity" />
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
